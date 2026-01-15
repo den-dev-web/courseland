@@ -1,0 +1,88 @@
+body[data-bg="glass-geo"] {
+  background-color: var(--bg-glass-base);
+  background-image: radial-gradient(
+      900px 600px at 10% 0%,
+      rgba(37, 99, 235, 0.08),
+      transparent 70%
+    ),
+    radial-gradient(
+      760px 520px at 95% 10%,
+      rgba(100, 116, 139, 0.12),
+      transparent 65%
+    );
+  position: relative;
+}
+
+body[data-bg="glass-geo"]::before,
+body[data-bg="glass-geo"]::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body[data-bg="glass-geo"]::before {
+  background-image: linear-gradient(
+      140deg,
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1)
+    ),
+    linear-gradient(
+      200deg,
+      rgba(255, 255, 255, 0.35),
+      rgba(255, 255, 255, 0.08)
+    ),
+    linear-gradient(
+      110deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.06)
+    );
+  background-size: 380px 260px, 420px 300px, 320px 240px;
+  background-position: 8% 12%, 75% 8%, 60% 70%;
+  background-repeat: no-repeat;
+  opacity: 0.55;
+  filter: blur(6px);
+}
+
+body[data-bg="glass-geo"]::after {
+  background-image: linear-gradient(
+      160deg,
+      var(--bg-glass-ink),
+      transparent 70%
+    ),
+    linear-gradient(
+      220deg,
+      var(--bg-glass-ink),
+      transparent 70%
+    ),
+    linear-gradient(
+      120deg,
+      var(--bg-glass-edge),
+      transparent 75%
+    );
+  background-size: 420px 280px, 460px 320px, 520px 380px;
+  background-position: 12% 18%, 82% 12%, 70% 68%;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  filter: blur(18px) saturate(1.2);
+}
+
+:root[data-theme="dark"] body[data-bg="glass-geo"]::before {
+  background-image: linear-gradient(
+      140deg,
+      rgba(15, 23, 42, 0.5),
+      rgba(15, 23, 42, 0.15)
+    ),
+    linear-gradient(
+      200deg,
+      rgba(30, 41, 59, 0.45),
+      rgba(30, 41, 59, 0.1)
+    ),
+    linear-gradient(
+      110deg,
+      rgba(15, 23, 42, 0.4),
+      rgba(15, 23, 42, 0.08)
+    );
+  opacity: 0.6;
+}

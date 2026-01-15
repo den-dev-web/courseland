@@ -1,0 +1,158 @@
+.c-subscribe {
+  padding-block: 64px;
+  position: relative;
+  overflow: hidden;
+}
+
+.c-subscribe::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 70%;
+  background: radial-gradient(
+      60% 60% at 15% 20%,
+      var(--bg-aurora-2),
+      transparent 70%
+    ),
+    radial-gradient(50% 50% at 85% 10%, var(--bg-aurora-1), transparent 70%);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.c-subscribe .o-container {
+  position: relative;
+  z-index: 1;
+}
+
+.c-subscribe__inner {
+  display: grid;
+  gap: 24px;
+  align-items: start;
+}
+
+.c-subscribe__intro h2 {
+  margin: 0 0 12px;
+}
+
+.c-subscribe__intro p {
+  margin: 0 0 16px;
+  color: var(--color-muted);
+}
+
+.c-subscribe__points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+  color: var(--color-text);
+}
+
+.c-subscribe__points li {
+  position: relative;
+  padding-left: 24px;
+}
+
+.c-subscribe__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--color-primary);
+  box-shadow: 0 0 0 4px var(--color-primary-soft);
+}
+
+.c-subscribe__form {
+  width: 100%;
+  max-width: none;
+  padding: 22px;
+  border-radius: var(--radius-l);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(160deg, var(--color-bg), var(--color-surface));
+  box-shadow: var(--shadow-m);
+}
+
+.c-subscribe__field input {
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+
+.c-subscribe__field input::placeholder {
+  color: var(--color-muted);
+}
+
+.c-subscribe__consent {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--color-muted);
+  white-space: normal;
+}
+
+.c-subscribe__consent input {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  margin-right: 6px;
+  border-radius: 5px;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: border-color var(--t-fast), background var(--t-fast),
+    box-shadow var(--t-fast), transform var(--t-fast);
+}
+
+.c-subscribe__consent input::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--color-on-primary);
+  transform: scale(0);
+  transition: transform var(--t-fast);
+}
+
+.c-subscribe__consent input:checked {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px var(--color-primary-soft);
+}
+
+.c-subscribe__consent input:checked::after {
+  transform: scale(1);
+}
+
+.c-subscribe__consent input:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.c-subscribe__consent input:active {
+  transform: scale(0.96);
+}
+
+@media (min-width: 768px) {
+  .c-subscribe__inner {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 32px;
+  }
+
+  .c-subscribe__form {
+    padding: 26px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-subscribe__form {
+    max-width: 420px;
+    justify-self: end;
+  }
+}

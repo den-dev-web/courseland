@@ -1,0 +1,78 @@
+.c-faq {
+  padding-block: 56px;
+}
+
+.c-faq__list {
+  display: grid;
+  gap: 16px;
+}
+
+.c-faq__item {
+  border-radius: var(--radius-l);
+  border: 1px solid var(--color-border);
+  background: linear-gradient(180deg, var(--color-bg), var(--color-surface));
+  box-shadow: var(--shadow-s);
+  overflow: hidden;
+}
+
+.c-faq__trigger {
+  width: 100%;
+  text-align: left;
+  padding: 18px 48px 18px 18px;
+  border: 0;
+  background: transparent;
+  font-weight: 600;
+  color: var(--color-text);
+  position: relative;
+  cursor: pointer;
+}
+
+.c-faq__trigger::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: var(--radius-round);
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  font-size: 1rem;
+  transition: transform var(--t-base), background var(--t-base);
+}
+
+.c-faq__trigger[aria-expanded="true"]::after {
+  content: "–";
+  transform: translateY(-50%) rotate(180deg);
+  background: var(--color-primary-soft);
+  color: var(--color-primary);
+}
+
+.c-faq__trigger:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
+}
+
+.c-faq__panel {
+  padding: 0 18px 18px;
+  color: var(--color-muted);
+  line-height: 1.55;
+}
+
+.c-faq__panel p {
+  margin: 0;
+}
+
+.c-faq__panel[hidden] {
+  display: none;
+}
+
+@media (hover: hover) {
+  .c-faq__item:hover {
+    border-color: var(--color-primary-soft);
+    box-shadow: var(--shadow-m);
+  }
+}

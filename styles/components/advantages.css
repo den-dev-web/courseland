@@ -1,0 +1,35 @@
+.c-advantages {
+  padding-block: 56px;
+}
+
+.c-advantages__grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.c-advantage-card {
+  padding: 20px;
+  border-radius: var(--radius-l);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  display: grid;
+  gap: 10px;
+}
+
+.c-advantage-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c-advantage-card p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .c-advantages__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,52 @@
+body[data-bg="aurora"] {
+  background-color: var(--bg-base);
+  background-image: radial-gradient(
+      900px 520px at 5% -10%,
+      var(--bg-aurora-1),
+      transparent 60%
+    ),
+    radial-gradient(
+      760px 480px at 95% 0%,
+      var(--bg-aurora-2),
+      transparent 55%
+    ),
+    radial-gradient(
+      720px 520px at 50% 110%,
+      var(--bg-aurora-3),
+      transparent 60%
+    ),
+    linear-gradient(
+      180deg,
+      var(--bg-base) 0%,
+      var(--color-bg) 45%,
+      var(--bg-base) 100%
+    );
+}
+
+body[data-bg="aurora"]::before {
+  content: "";
+  position: fixed;
+  inset: -10% -5% 0;
+  background-image: var(--bg-image-1), var(--bg-image-2);
+  background-size: 540px 540px, 620px 620px;
+  background-position: 8% 12%, 92% 18%;
+  background-repeat: no-repeat;
+  opacity: var(--bg-image-opacity);
+  filter: blur(12px) saturate(1.15);
+  pointer-events: none;
+  z-index: -2;
+}
+
+body[data-bg="aurora"]::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    1200px 600px at 50% -10%,
+    rgba(255, 255, 255, 0.12),
+    transparent 60%
+  );
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: -1;
+}

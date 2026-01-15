@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-seo-title>UX Foundations — CourseLand</title>
+    <meta
+      name="description"
+      content="Базовый курс по UX-дизайну: исследования, прототипы, тестирование."
+      data-seo-description
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="" data-og-title />
+    <meta property="og:description" content="" data-og-description />
+    <meta property="og:image" content="" data-og-image />
+    <meta property="og:url" content="" data-og-url />
+
+    <link rel="canonical" href="" data-canonical />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/icons/CourseLand_favicon.png"
+    />
+
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="styles/critical.css" />
+
+    <!-- SETTINGS -->
+    <link rel="stylesheet" href="styles/settings/base.css" />
+    <link rel="stylesheet" href="styles/settings/tokens.css" />
+    <link rel="stylesheet" href="styles/settings/themes.css" />
+
+    <!-- BACKGROUNDS -->
+    <link rel="stylesheet" href="styles/backgrounds/bg-aurora.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-grid.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-dash-grid.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-dash-rhythm.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-bento-grid.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-aurora-fog.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-glass-geo.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-mesh.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-strata.css" />
+
+    <!-- LAYOUT -->
+    <link rel="stylesheet" href="styles/layout.css" />
+
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="styles/components/breadcrumbs.css" />
+    <link rel="stylesheet" href="styles/components/buttons.css" />
+    <link rel="stylesheet" href="styles/components/categories.css" />
+    <link rel="stylesheet" href="styles/components/card.css" />
+    <link rel="stylesheet" href="styles/components/course-hero.css" />
+    <link rel="stylesheet" href="styles/components/course-content.css" />
+    <link rel="stylesheet" href="styles/components/course-reviews.css" />
+    <link rel="stylesheet" href="styles/components/faq.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/menu.css" />
+    <link rel="stylesheet" href="styles/components/reviews.css" />
+    <link rel="stylesheet" href="styles/components/slider.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+
+    <!-- UTILITIES + ANIMATIONS -->
+    <link rel="stylesheet" href="styles/utilities/utils.css" />
+    <!-- <link rel="stylesheet" href="styles/animations.css" />-->
+  </head>
+  <!-- data-bg options: aurora | grid | dash-grid | dash-rhythm | bento-grid | aurora-fog | glass-geo | mesh | strata -->
+  <body data-bg="dash-grid">
+    <header class="c-header">
+      <div class="o-container c-header__inner">
+        <a href="index.html" class="c-header__logo">
+          <img
+            class="c-header__logo-img"
+            src="assets/icons/CourseLand_logo.png"
+            alt="CourseLand"
+            width="28"
+            height="28"
+          />
+          <span class="c-header__logo-text">CourseLand</span>
+        </a>
+
+        <!-- DESKTOP NAV -->
+        <nav class="c-nav" aria-label="Основная навигация">
+          <a href="index.html">Главная</a>
+          <a href="index.html#catalog">Каталог</a>
+        </nav>
+
+        <!-- ACTIONS -->
+        <div class="c-header__actions">
+          <button
+            class="c-theme-toggle"
+            aria-label="Переключить тему"
+            data-theme-toggle
+          >
+            <span class="c-theme-toggle__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                data-icon="moon"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <line x1="12" y1="2" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="22" y2="12" />
+                <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                data-icon="sun"
+                aria-hidden="true"
+              >
+                <path
+                  d="
+                    M21 12.8
+                    A9 9 0 1 1
+                    11.2 3
+                    A7 7 0 0 0
+                    21 12.8
+                  "
+                />
+              </svg>
+            </span>
+          </button>
+
+          <button
+            class="c-burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-burger
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="c-mobile-menu" id="mobile-menu" hidden>
+      <div class="c-mobile-menu__overlay" data-menu-overlay></div>
+
+      <nav
+        class="c-mobile-menu__panel"
+        role="navigation"
+        aria-label="Мобильное меню"
+      >
+        <button
+          class="c-mobile-menu__close"
+          aria-label="Закрыть меню"
+          data-menu-close
+        >
+          ✕
+        </button>
+
+        <ul class="c-mobile-menu__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="index.html#catalog">Каталог</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main class="c-course is-loading" data-course>
+      <!-- Back -->
+      <nav class="c-course-back o-container">
+        <a href="index.html#catalog">← Назад к каталогу</a>
+      </nav>
+      <nav class="c-breadcrumbs o-container" aria-label="Breadcrumb">
+        <ol class="c-breadcrumbs__list" data-breadcrumbs></ol>
+      </nav>
+
+      <section class="c-course-hero-wrap">
+        <div class="o-container">
+          <div class="c-course-layout">
+            <!-- LEFT COLUMN -->
+            <div class="c-course-main">
+              <!-- COURSE HERO (skeleton + real share layout) -->
+              <section class="c-course-hero">
+                <div class="o-container c-course-hero__inner">
+                  <!-- MEDIA -->
+                  <div class="c-course-hero__media c-course-card__media">
+                    <!-- Skeleton -->
+                    <div class="c-course-skeleton">
+                      <div class="skeleton skeleton--media"></div>
+                    </div>
+
+                    <!-- Real -->
+                    <div class="c-course-real">
+                      <picture>
+                        <source data-course-image-avif type="image/avif" />
+                        <source data-course-image-webp type="image/webp" />
+                        <img data-course-image alt="" />
+                      </picture>
+                    </div>
+                  </div>
+
+                  <!-- CONTENT -->
+                  <div class="c-course-hero__content">
+                    <!-- Skeleton -->
+                    <div class="c-course-skeleton">
+                      <div class="skeleton skeleton--badge"></div>
+                      <div class="skeleton skeleton--title"></div>
+                      <div class="skeleton skeleton--text"></div>
+                      <div class="skeleton skeleton--text short"></div>
+
+                      <div class="c-course-meta">
+                        <div class="skeleton skeleton--meta"></div>
+                        <div class="skeleton skeleton--meta"></div>
+                        <div class="skeleton skeleton--meta"></div>
+                      </div>
+
+                      <div class="c-course-actions">
+                        <div class="skeleton skeleton--button"></div>
+                        <div class="skeleton skeleton--price"></div>
+                      </div>
+                    </div>
+
+                    <!-- Real -->
+                    <div class="c-course-real">
+                      <span
+                        class="c-course-card__badge"
+                        data-course-category
+                      ></span>
+
+                      <h1 class="c-course-title" data-course-title></h1>
+
+                      <p class="c-course-lead" data-course-lead></p>
+
+                      <div class="c-course-card__meta c-course-meta">
+                        <span data-course-duration></span>
+                        <span data-course-rating></span>
+                        <span data-course-students></span>
+                      </div>
+
+                      <div class="c-course-actions">
+                        <button
+                          class="c-button c-button--primary"
+                          data-cta-start
+                        >
+                          Начать обучение
+                        </button>
+                        <span
+                          class="c-course-card__price"
+                          data-course-price
+                        ></span>
+                      </div>
+
+                      <p class="c-course-note">
+                        Подходит для новичков · Без опыта · Можно проходить в
+                        своём темпе
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COURSE REVIEWS -->
+      <section class="c-course-reviews">
+        <div class="o-container">
+          <header class="c-course-reviews__header">
+            <h2 class="c-section-title">Отзывы студентов</h2>
+            <p class="c-course-reviews__subtitle">
+              Более 1200 студентов уже прошли этот курс
+            </p>
+          </header>
+
+          <div class="c-reviews c-slider" data-reviews-slider>
+            <button class="c-slider__btn" data-prev aria-label="Назад">
+              ‹
+            </button>
+            <div class="c-slider__track" data-track data-course-reviews></div>
+            <button class="c-slider__btn" data-next aria-label="Вперёд">
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- COURSE CONTENT -->
+      <section class="c-course-content">
+        <div class="o-container">
+          <!-- Skeleton -->
+          <div class="c-course-skeleton">
+            <div class="c-course-content__section">
+              <div class="skeleton skeleton--section-title"></div>
+              <div class="skeleton skeleton--text"></div>
+              <div class="skeleton skeleton--text"></div>
+              <div class="skeleton skeleton--text short"></div>
+            </div>
+
+            <div class="c-course-content__section">
+              <div class="skeleton skeleton--section-title"></div>
+              <div class="c-course-program c-faq__list">
+                <div class="c-faq__item">
+                  <button class="c-faq__trigger" type="button">
+                    <span class="skeleton skeleton--text"></span>
+                  </button>
+                  <div class="c-faq__panel">
+                    <div class="skeleton skeleton--text"></div>
+                  </div>
+                </div>
+                <div class="c-faq__item">
+                  <button class="c-faq__trigger" type="button">
+                    <span class="skeleton skeleton--text short"></span>
+                  </button>
+                  <div class="c-faq__panel">
+                    <div class="skeleton skeleton--text"></div>
+                  </div>
+                </div>
+                <div class="c-faq__item">
+                  <button class="c-faq__trigger" type="button">
+                    <span class="skeleton skeleton--text"></span>
+                  </button>
+                  <div class="c-faq__panel">
+                    <div class="skeleton skeleton--text"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="c-course-content__section">
+              <div class="skeleton skeleton--section-title"></div>
+              <div class="c-course-author__card c-course-card">
+                <div class="skeleton c-course-skeleton__avatar"></div>
+                <div class="c-course-author__content">
+                  <div class="skeleton skeleton--text short"></div>
+                  <div class="skeleton skeleton--text"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real -->
+          <div class="c-course-real">
+            <div class="c-course-content__section">
+              <h2 class="c-section-title">О курсе</h2>
+              <p data-course-about></p>
+            </div>
+
+            <div class="c-course-content__section">
+              <h2 class="c-section-title">Программа</h2>
+              <div
+                class="c-course-program c-faq__list"
+                data-course-program
+              ></div>
+            </div>
+
+            <div
+              class="c-course-content__section c-course-author"
+              data-course-author
+            >
+              <h2 class="c-section-title">Автор курса</h2>
+              <div class="c-course-author__card c-course-card">
+                <img
+                  class="c-course-author__avatar"
+                  data-course-author-avatar
+                  alt=""
+                />
+                <div class="c-course-author__content">
+                  <p class="c-course-author__name" data-course-author-name></p>
+                  <p class="c-course-author__bio" data-course-author-bio></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-course-error" hidden>
+        <div class="o-container">
+          <div class="c-course-error__inner">
+            <h1 class="c-course-error__title">Курс не найден</h1>
+            <p class="c-course-error__text">
+              Возможно, курс был удалён или ссылка устарела.
+            </p>
+
+            <div class="c-course-error__actions">
+              <a href="index.html#catalog" class="c-button c-button--primary">
+                Перейти в каталог
+              </a>
+              <a href="index.html" class="c-button c-button--ghost">
+                На главную
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="c-footer" aria-labelledby="footer-title">
+      <div class="o-container c-footer__inner">
+        <div class="c-footer__brand">
+          <a href="index.html" class="c-footer__logo">
+            <img
+              src="assets/icons/CourseLand_logo.png"
+              alt="CourseLand"
+              width="28"
+              height="28"
+            />
+            <span>CourseLand</span>
+          </a>
+          <p class="c-footer__lead">
+            Курсы, которые помогают расти в дизайне, разработке и маркетинге.
+          </p>
+          <div class="c-footer__meta">
+            <span>Киев · Онлайн</span>
+            <span>support@courseland.ua</span>
+          </div>
+        </div>
+
+        <div class="c-footer__nav">
+          <h2 id="footer-title" class="c-footer__title">Навигация</h2>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="index.html#catalog">Каталог курсов</a></li>
+          </ul>
+        </div>
+
+        <div class="c-footer__nav">
+          <h3 class="c-footer__title">Компания</h3>
+          <ul>
+            <li><a href="#">О платформе</a></li>
+            <li><a href="#">Преподаватели</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Вакансии</a></li>
+          </ul>
+        </div>
+
+        <div class="c-footer__nav">
+          <h3 class="c-footer__title">Соцсети</h3>
+          <ul class="c-footer__socials">
+            <li>
+              <a href="#" aria-label="CourseLand в Telegram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 3L3 10.5l7 2.5L12.5 20 15 13l6-10Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="CourseLand во Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="CourseLand на Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17"
+                    cy="7"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="o-container c-footer__bottom">
+        <span>© <span data-year></span> CourseLand. Все права защищены.</span>
+        <div class="c-footer__legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="js/course.js"></script>
+    <script type="application/ld+json" data-schema-course></script>
+    <script type="application/ld+json" data-schema-breadcrumbs></script>
+  </body>
+</html>

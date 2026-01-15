@@ -1,0 +1,12 @@
+body[data-bg="grid"] {
+  background-color: var(--bg-grid-base);
+  background-image: radial-gradient(
+      circle,
+      var(--bg-grid-dot) 1px,
+      transparent 1.5px
+    ),
+    linear-gradient(transparent 95%, var(--bg-grid-line) 96%),
+    linear-gradient(90deg, transparent 95%, var(--bg-grid-line) 96%);
+  background-size: 32px 32px, 180px 180px, 180px 180px;
+  background-position: 0 0, 0 0, 0 0;
+}

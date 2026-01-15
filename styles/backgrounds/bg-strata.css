@@ -1,0 +1,17 @@
+body[data-bg="strata"] {
+  background-color: var(--bg-strata-2);
+  background-image: linear-gradient(
+      180deg,
+      var(--bg-strata-1) 0%,
+      var(--bg-strata-2) 45%,
+      var(--bg-strata-3) 100%
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 22px,
+      rgba(148, 163, 184, 0.12) 23px,
+      transparent 24px
+    );
+  background-size: 100% 100%, 100% 180px;
+}

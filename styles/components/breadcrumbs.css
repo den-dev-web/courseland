@@ -1,0 +1,40 @@
+/* ===== Breadcrumbs ===== */
+
+.c-breadcrumbs {
+  padding: 4px 16px;
+}
+
+.c-breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.c-breadcrumbs__list li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.c-breadcrumbs__list li + li::before {
+  content: "›";
+  margin: 0 6px;
+  color: var(--color-muted);
+}
+
+.c-breadcrumbs__list a {
+  text-decoration: none;
+  color: var(--color-muted);
+}
+
+.c-breadcrumbs__list a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 1024px) {
+  .c-breadcrumbs {
+    padding-top: 8px;
+  }
+}

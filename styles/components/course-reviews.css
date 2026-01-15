@@ -1,0 +1,15 @@
+.c-course-reviews {
+  position: relative;
+  padding-block: 56px;
+  overflow: hidden;
+}
+
+.c-course-reviews__header {
+  display: grid;
+  gap: 4px;
+}
+
+.c-course-reviews__subtitle {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}

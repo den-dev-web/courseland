@@ -1,0 +1,131 @@
+.c-home-reviews {
+  position: relative;
+  padding-block: 56px;
+  overflow: hidden;
+}
+
+.c-home-reviews::before {
+  content: "";
+  position: absolute;
+  inset: -20% -10% auto;
+  height: 60%;
+  background:
+    radial-gradient(60% 60% at 20% 20%, var(--bg-orbit), transparent 70%),
+    radial-gradient(50% 50% at 80% 10%, var(--bg-aurora-1), transparent 70%);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.c-home-reviews .o-container {
+  position: relative;
+  z-index: 1;
+}
+
+.c-reviews {
+  margin-top: 24px;
+  padding-inline: 12px;
+  --per-view: 3;
+  --slider-gap: 24px;
+}
+
+.c-review {
+  position: relative;
+  padding: 20px;
+  background: linear-gradient(145deg, var(--color-bg), var(--color-surface));
+  border-radius: var(--radius-l);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-s);
+  display: grid;
+  gap: 16px;
+  transition:
+    transform var(--t-base),
+    box-shadow var(--t-base),
+    border-color var(--t-base);
+}
+
+.c-review.c-slider__item {
+  height: 100%;
+}
+
+.c-review::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 18px;
+  left: 16px;
+  width: 2px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--color-primary), transparent);
+  opacity: 0.6;
+}
+
+.c-review p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.c-review__rating {
+  display: inline-flex;
+  gap: 6px;
+  color: #f59e0b;
+}
+
+.c-review__star {
+  width: 14px;
+  height: 14px;
+}
+
+.c-review__author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.c-review__author > div {
+  display: grid;
+  gap: 2px;
+}
+
+.c-review__author strong {
+  font-size: 0.95rem;
+}
+
+.c-review__author div div {
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.c-review__author img {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-round);
+  border: 2px solid var(--color-bg);
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.14);
+  object-fit: cover;
+}
+
+@media (hover: hover) {
+  .c-review:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-l);
+    border-color: var(--color-primary-soft);
+  }
+}
+
+@media (hover: none) {
+  .c-review:active {
+    transform: scale(0.99);
+  }
+}
+
+@media (min-width: 768px) {
+  .c-reviews {
+    margin-top: 32px;
+    padding-inline: 20px;
+  }
+
+  .c-review {
+    padding: 24px;
+  }
+}

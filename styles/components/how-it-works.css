@@ -1,0 +1,43 @@
+.c-how {
+  padding-block: 56px;
+}
+
+.c-how__list {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+  display: grid;
+  gap: 16px;
+}
+
+.c-how__item {
+  padding: 20px;
+  border-radius: var(--radius-l);
+  border: 1px solid var(--color-border);
+  background: var(--color-bg);
+  display: grid;
+  gap: 8px;
+}
+
+.c-how__step {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 0.85rem;
+}
+
+.c-how__item h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.c-how__item p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: 0.95rem;
+}
+
+@media (min-width: 768px) {
+  .c-how__list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

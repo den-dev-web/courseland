@@ -1,0 +1,92 @@
+body[data-bg="dash-rhythm"] {
+  background-color: var(--bg-dash-light-base);
+  background-image: radial-gradient(
+      circle,
+      var(--bg-dash-light-ink) 0.9px,
+      transparent 1.6px
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 10px,
+      var(--bg-dash-light-ink-strong) 10px,
+      var(--bg-dash-light-ink-strong) 18px,
+      transparent 18px,
+      transparent 28px,
+      var(--bg-dash-light-ink) 28px,
+      var(--bg-dash-light-ink) 34px,
+      transparent 34px,
+      transparent 52px
+    ),
+    linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 6px,
+      var(--bg-dash-light-ink) 6px,
+      var(--bg-dash-light-ink) 12px,
+      transparent 12px,
+      transparent 20px,
+      var(--bg-dash-light-ink-strong) 20px,
+      var(--bg-dash-light-ink-strong) 32px,
+      transparent 32px,
+      transparent 46px
+    ),
+    linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 14px,
+      var(--bg-dash-light-ink) 14px,
+      var(--bg-dash-light-ink) 22px,
+      transparent 22px,
+      transparent 36px
+    );
+  background-size: 40px 40px, 220px 220px, 180px 180px, 260px 260px;
+  background-position: 0 0, 0 10px, 18px 0, 40px 30px;
+  background-blend-mode: normal;
+}
+
+:root[data-theme="dark"] body[data-bg="dash-rhythm"] {
+  background-color: var(--bg-dash-dark-base);
+  background-image: radial-gradient(
+      circle,
+      var(--bg-dash-dark-ink) 0.9px,
+      transparent 1.6px
+    ),
+    linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 10px,
+      var(--bg-dash-dark-ink-strong) 10px,
+      var(--bg-dash-dark-ink-strong) 18px,
+      transparent 18px,
+      transparent 28px,
+      var(--bg-dash-dark-ink) 28px,
+      var(--bg-dash-dark-ink) 34px,
+      transparent 34px,
+      transparent 52px
+    ),
+    linear-gradient(
+      0deg,
+      transparent 0,
+      transparent 6px,
+      var(--bg-dash-dark-ink) 6px,
+      var(--bg-dash-dark-ink) 12px,
+      transparent 12px,
+      transparent 20px,
+      var(--bg-dash-dark-ink-strong) 20px,
+      var(--bg-dash-dark-ink-strong) 32px,
+      transparent 32px,
+      transparent 46px
+    ),
+    linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 14px,
+      var(--bg-dash-dark-ink) 14px,
+      var(--bg-dash-dark-ink) 22px,
+      transparent 22px,
+      transparent 36px
+    );
+  background-size: 40px 40px, 220px 220px, 180px 180px, 260px 260px;
+  background-position: 0 0, 0 10px, 18px 0, 40px 30px;
+}

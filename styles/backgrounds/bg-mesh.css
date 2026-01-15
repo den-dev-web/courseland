@@ -1,0 +1,18 @@
+body[data-bg="mesh"] {
+  background-color: var(--color-bg);
+  background-image: radial-gradient(
+      520px 420px at 10% 5%,
+      var(--bg-mesh-1),
+      transparent 65%
+    ),
+    radial-gradient(
+      540px 420px at 90% 0%,
+      var(--bg-mesh-2),
+      transparent 60%
+    ),
+    radial-gradient(
+      620px 520px at 60% 100%,
+      var(--bg-mesh-3),
+      transparent 65%
+    );
+}

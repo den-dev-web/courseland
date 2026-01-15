@@ -1,0 +1,301 @@
+export const courses = [
+  {
+    id: "ux-foundations",
+    title: "UX Foundations",
+    description:
+      "Базовый курс по UX-дизайну: исследования, прототипы, тестирование.",
+    category: "design",
+    categoryLabel: "Дизайн",
+    level: "beginner",
+    price: 0,
+    rating: 4.8,
+    durationHours: 6,
+    students: 1200,
+    image: {
+      avif: "./assets/images/ux-foundations.avif",
+      webp: "./assets/images/ux-foundations.webp",
+      jpg: "./assets/images/ux-foundations.jpg",
+      alt: "UX Foundations",
+    },
+    about:
+      "Вы узнаете основы UX-мышления, научитесь проводить исследования и тестировать гипотезы.",
+    program: [
+      "Введение в UX",
+      "Исследования пользователей",
+      "Прототипирование",
+      "Юзабилити-тестирование",
+    ],
+    author: {
+      name: "Анна Иванова",
+      bio: "Senior UX Designer, 8 лет опыта",
+      avatar: "assets/images/review_01.jpg",
+    },
+    reviews: [
+      {
+        name: "Олег",
+        text: "Отличный курс, всё по делу",
+        rating: 5,
+        avatar: "assets/images/review_02.jpg",
+      },
+      {
+        name: "Олег",
+        text: "Отличный курс, всё по делу",
+        rating: 5,
+        avatar: "assets/images/review_02.jpg",
+      },
+      {
+        name: "Олег",
+        text: "Отличный курс, всё по делу",
+        rating: 5,
+        avatar: "assets/images/review_02.jpg",
+      },
+      {
+        name: "Олег",
+        text: "Отличный курс, всё по делу",
+        rating: 5,
+        avatar: "assets/images/review_02.jpg",
+      },
+      {
+        name: "Олег",
+        text: "Отличный курс, всё по делу",
+        rating: 5,
+        avatar: "assets/images/review_02.jpg",
+      },
+    ],
+  },
+  {
+    id: "frontend-bootcamp",
+    title: "Frontend Bootcamp",
+    description: "Интенсив по современному фронтенду: HTML, CSS, JS.",
+    category: "dev",
+    categoryLabel: "Разработка",
+    level: "beginner",
+    price: 7900,
+    rating: 4.6,
+    durationHours: 12,
+    students: 980,
+    image: {
+      avif: "assets/images/frontend-bootcamp.avif",
+      webp: "assets/images/frontend-bootcamp.webp",
+      jpg: "assets/images/frontend-bootcamp.jpg",
+      alt: "Frontend Bootcamp",
+    },
+    about:
+      "Практический курс с задачами и мини‑проектами для старта в веб‑разработке.",
+    program: [
+      "Основы HTML и семантики",
+      "CSS‑сетка и адаптив",
+      "JavaScript для интерфейсов",
+      "Сборка небольшого проекта",
+    ],
+    author: {
+      name: "Илья Смирнов",
+      bio: "Frontend Lead, 10 лет опыта",
+      avatar: "assets/images/author.jpg",
+    },
+    reviews: [
+      {
+        name: "Мария",
+        text: "Хороший темп и много практики.",
+        rating: 4.7,
+        avatar: "assets/images/user2.jpg",
+      },
+    ],
+  },
+  {
+    id: "product-marketing",
+    title: "Product Marketing",
+    description: "Стратегии запуска, позиционирование и рост продукта.",
+    category: "marketing",
+    categoryLabel: "Маркетинг",
+    level: "middle",
+    price: 9900,
+    rating: 4.5,
+    durationHours: 8,
+    students: 640,
+    image: {
+      avif: "assets/images/product-marketing.avif",
+      webp: "assets/images/product-marketing.webp",
+      jpg: "assets/images/product-marketing.jpg",
+      alt: "Product Marketing",
+    },
+    about: "Разберете go‑to‑market, каналы привлечения и продуктовые метрики.",
+    program: [
+      "Исследование рынка",
+      "Позиционирование",
+      "Каналы роста",
+      "Аналитика маркетинга",
+    ],
+    author: {
+      name: "Екатерина Орлова",
+      bio: "Product Marketer, 7 лет в EdTech",
+      avatar: "assets/images/author.jpg",
+    },
+    reviews: [
+      {
+        name: "Ирина",
+        text: "Практично и по делу, полезные шаблоны.",
+        rating: 4.6,
+        avatar: "assets/images/user3.jpg",
+      },
+    ],
+  },
+  {
+    id: "data-analytics",
+    title: "Data Analytics",
+    description: "Аналитика данных для бизнеса: метрики, отчеты, инсайты.",
+    category: "analytics",
+    categoryLabel: "Аналитика",
+    level: "beginner",
+    price: 0,
+    rating: 4.7,
+    durationHours: 14,
+    students: 530,
+    image: {
+      avif: "assets/images/data-analytics.avif",
+      webp: "assets/images/data-analytics.webp",
+      jpg: "assets/images/data-analytics.jpg",
+      alt: "Data Analytics",
+    },
+    about:
+      "Научитесь строить отчеты, анализировать воронки и принимать решения на данных.",
+    program: [
+      "Основы аналитики",
+      "Метрики продукта",
+      "Визуализация данных",
+      "Отчеты и инсайты",
+    ],
+    author: {
+      name: "Дмитрий Левин",
+      bio: "Data Analyst, 6 лет опыта",
+      avatar: "assets/images/author.jpg",
+    },
+    reviews: [
+      {
+        name: "Светлана",
+        text: "Понятное объяснение, много примеров.",
+        rating: 4.8,
+        avatar: "assets/images/user1.jpg",
+      },
+    ],
+  },
+  {
+    id: "team-lead",
+    title: "Team Lead Essentials",
+    description: "Управление командой: процессы, цели, мотивация.",
+    category: "management",
+    categoryLabel: "Менеджмент",
+    level: "middle",
+    price: 12900,
+    rating: 4.9,
+    durationHours: 9,
+    students: 410,
+    image: {
+      avif: "assets/images/team-lead.avif",
+      webp: "assets/images/team-lead.webp",
+      jpg: "assets/images/team-lead.jpg",
+      alt: "Team Lead Essentials",
+    },
+    about: "Разберете 1‑1, постановку целей, планирование и развитие команды.",
+    program: [
+      "Роль тимлида",
+      "Постановка целей",
+      "Обратная связь",
+      "Рост команды",
+    ],
+    author: {
+      name: "Алексей Петров",
+      bio: "Engineering Manager, 9 лет опыта",
+      avatar: "assets/images/author.jpg",
+    },
+    reviews: [
+      {
+        name: "Виктор",
+        text: "Системный курс, много практических приемов.",
+        rating: 4.9,
+        avatar: "assets/images/user2.jpg",
+      },
+    ],
+  },
+  {
+    id: "advanced-ui",
+    title: "Advanced UI Design",
+    description: "Продвинутый курс по UI: визуальные системы и композиция.",
+    category: "design",
+    categoryLabel: "Дизайн",
+    level: "advanced",
+    price: 14900,
+    rating: 4.4,
+    durationHours: 16,
+    students: 280,
+    image: {
+      avif: "assets/images/advanced-ui.avif",
+      webp: "assets/images/advanced-ui.webp",
+      jpg: "assets/images/advanced-ui.jpg",
+      alt: "Advanced UI Design",
+    },
+    about:
+      "Углубитесь в типографику, сетки и визуальные паттерны продуктового дизайна.",
+    program: [
+      "Сетки и ритм",
+      "Цвет и контраст",
+      "Дизайн‑системы",
+      "UI‑паттерны",
+    ],
+    author: {
+      name: "Наталья Кузьмина",
+      bio: "Product Designer, 8 лет опыта",
+      avatar: "assets/images/author.jpg",
+    },
+    reviews: [
+      {
+        name: "Кирилл",
+        text: "Полезно для роста, много разборов.",
+        rating: 4.5,
+        avatar: "assets/images/user3.jpg",
+      },
+    ],
+  },
+];
+
+export const COURSES = Object.fromEntries(
+  courses.map((course) => [course.id, course])
+);
+
+export const homeReviews = [
+  {
+    name: "Олег",
+    role: "Junior Product Designer",
+    text: "Курс очень структурированный, сразу виден результат в работе.",
+    rating: 4.5,
+    avatar: "assets/images/review_02.jpg",
+  },
+  {
+    name: "Мария",
+    role: "Frontend Developer",
+    text: "Много практики и понятные объяснения. Прошла курс за месяц.",
+    rating: 4,
+    avatar: "assets/images/review_01.jpg",
+  },
+  {
+    name: "Ирина",
+    role: "Marketing Specialist",
+    text: "Отличная поддержка наставников и полезные материалы для работы.",
+    rating: 5,
+    avatar: "assets/images/review_01.jpg",
+  },
+  {
+    name: "Антон",
+    role: "UX Researcher",
+    text: "Понравилась структура и домашние задания — сразу пробую на проектах.",
+    rating: 5,
+    avatar: "assets/images/review_02.jpg",
+  },
+  {
+    name: "Светлана",
+    role: "Product Manager",
+    text: "Дала апгрейд портфолио и уверенность на собеседованиях.",
+    rating: 5,
+    avatar: "assets/images/review_01.jpg",
+  },
+];

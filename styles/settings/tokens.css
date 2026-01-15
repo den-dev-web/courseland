@@ -1,0 +1,96 @@
+:root {
+  /* Colors */
+  --bg-base: #f4f7fb;
+  --color-bg: #ffffff;
+  --color-surface: #f7f9fc;
+  --color-surface-2: #eef3f9;
+  --color-text: #0f172a;
+  --color-muted: #64748b;
+  --color-primary: #2563eb;
+  --color-primary-soft: #e0e7ff;
+  --color-border: #e5e7eb;
+  --color-on-primary: #ffffff;
+  --color-scrim: rgba(15, 23, 42, 0.4);
+  --color-success: #16a34a;
+  --color-danger: #ef4444;
+  --bg-aurora-1: rgba(14, 165, 233, 0.18);
+  --bg-aurora-2: rgba(45, 212, 191, 0.16);
+  --bg-aurora-3: rgba(251, 191, 36, 0.18);
+  --bg-grid-base: #eef2ff;
+  --bg-grid-line: rgba(224, 231, 255, 0.35);
+  --bg-grid-dot: rgba(224, 231, 255, 0.6);
+  --bg-grid-dark-base: #10172b;
+  --bg-grid-dark-line: rgba(224, 231, 255, 0.18);
+  --bg-grid-dark-dot: rgba(224, 231, 255, 0.35);
+  --bg-dash-light-base: #f7f9ff;
+  --bg-dash-light-ink: rgba(30, 41, 59, 0.22);
+  --bg-dash-light-ink-strong: rgba(30, 41, 59, 0.32);
+  --bg-dash-dark-base: #0c1222;
+  --bg-dash-dark-ink: rgba(224, 231, 255, 0.28);
+  --bg-dash-dark-ink-strong: rgba(224, 231, 255, 0.4);
+  --bg-dash-grid-base: #f6f8ff;
+  --bg-dash-grid-ink: rgba(30, 41, 59, 0.28);
+  --bg-glass-base: #f4f7fb;
+  --bg-glass-ink: rgba(37, 99, 235, 0.22);
+  --bg-glass-edge: rgba(100, 116, 139, 0.35);
+  --bg-bento-base: #f5f7fc;
+  --bg-bento-card: #e0e7ff;
+  --bg-bento-border: rgba(148, 163, 184, 0.22);
+  --bg-bento-ink: rgba(148, 163, 184, 0.18);
+  --bg-aurora-fog-base: #f6f8fc;
+  --bg-aurora-fog-slate: rgba(148, 163, 184, 0.35);
+  --bg-aurora-fog-blue: rgba(59, 130, 246, 0.4);
+  --bg-aurora-fog-glow: rgba(96, 165, 250, 0.28);
+  --bg-mesh-1: rgba(59, 130, 246, 0.16);
+  --bg-mesh-2: rgba(16, 185, 129, 0.14);
+  --bg-mesh-3: rgba(251, 191, 36, 0.16);
+  --bg-strata-1: #f3f6ff;
+  --bg-strata-2: #eef2ff;
+  --bg-strata-3: #f8fafc;
+  --bg-orbit: rgba(99, 102, 241, 0.12);
+  --bg-image-opacity: 0.14;
+  --bg-image-1: url("../../assets/images/advanced-ui.avif");
+  --bg-image-2: url("../../assets/images/product-marketing.avif");
+
+  /* Typography */
+  --font-base: "Manrope", "Plus Jakarta Sans", "Segoe UI", sans-serif;
+
+  /* Surface aliases */
+  --surface-1: var(--color-surface);
+  --surface-2: var(--color-surface-2);
+
+  /* Spacing */
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+
+  /* Radius */
+  --radius-s: 8px;
+  --radius-m: 12px;
+  --radius-ml: 14px;
+  --radius-xl: 16px;
+  --radius-l: 20px;
+  --radius: var(--radius-m);
+  --radius-pill: 999px;
+  --radius-round: 50%;
+
+  /* Shadow */
+  --shadow-s: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-m: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-l: 0 12px 32px rgba(15, 23, 42, 0.12);
+  --header-bg: rgba(255, 255, 255, 0.86);
+  --header-border: rgba(15, 23, 42, 0.08);
+  --header-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --header-blur: 14px;
+  --header-bg-scrolled: rgba(255, 255, 255, 0.94);
+  --header-border-scrolled: rgba(15, 23, 42, 0.14);
+  --header-shadow-scrolled: 0 14px 36px rgba(15, 23, 42, 0.14);
+  --header-height-desktop: 72px;
+
+  /* Motion */
+  --t-menu: 380ms cubic-bezier(0.4, 0, 0.2, 1);
+  --t-fast: 150ms ease;
+  --t-base: 220ms ease;
+}

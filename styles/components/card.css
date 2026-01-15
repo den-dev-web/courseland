@@ -1,0 +1,134 @@
+.c-course-card {
+  display: grid;
+  grid-template-rows: auto auto 1fr auto; /* media, header, body, footer */
+
+  gap: 12px;
+  position: relative;
+
+  padding: 16px;
+  border-radius: var(--radius-l);
+
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+
+  transition: box-shadow var(--t-base), transform var(--t-base);
+}
+
+.c-course-card__link {
+  position: absolute;
+  inset: 0;
+}
+
+.c-course-card__header {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.c-course-card__badge,
+.c-course-card__level {
+  font-size: 0.7rem;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-1);
+  color: var(--color-muted);
+}
+
+.c-course-card__media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius-ml);
+  overflow: hidden;
+  background: var(--surface-1);
+}
+
+.c-course-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.c-course-card__media {
+  margin-bottom: 12px;
+}
+
+.c-course-card__title {
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.c-course-card__description {
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.5;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.c-course-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.c-course-card__meta {
+  display: flex;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.c-course-card__price {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-primary);
+}
+
+@media (hover: none) {
+  .c-course-card:active {
+    transform: scale(0.98);
+  }
+
+  .c-course-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (hover: hover) {
+  .c-course-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+  }
+}
+
+@media (min-width: 768px) {
+  .c-course-card {
+    padding: 20px;
+  }
+
+  .c-course-card__title {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .c-course-card__description {
+    -webkit-line-clamp: 3;
+  }
+}
+
+.c-course-card--skeleton {
+  pointer-events: none;
+}
+
+.c-course-card--skeleton .c-course-card__footer {
+  margin-top: auto;
+}

@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title data-seo-title>Каталог онлайн-курсов | CourseLand</title>
+    <meta
+      name="description"
+      content="Онлайн-курсы по дизайну, разработке и маркетингу. Учитесь в удобном темпе на платформе CourseLand."
+      data-seo-description
+    />
+    <link rel="canonical" href="" data-canonical />
+    <meta name="robots" content="index, follow" data-robots />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/icons/CourseLand_favicon.png"
+    />
+
+    <!-- Critical CSS -->
+    <link rel="stylesheet" href="styles/critical.css" />
+
+    <!-- SETTINGS -->
+    <link rel="stylesheet" href="styles/settings/base.css" />
+    <link rel="stylesheet" href="styles/settings/tokens.css" />
+    <link rel="stylesheet" href="styles/settings/themes.css" />
+
+    <!-- BACKGROUNDS -->
+    <link rel="stylesheet" href="styles/backgrounds/bg-aurora.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-grid.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-dash-grid.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-dash-rhythm.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-bento-grid.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-aurora-fog.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-glass-geo.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-mesh.css" />
+    <link rel="stylesheet" href="styles/backgrounds/bg-strata.css" />
+
+    <!-- LAYOUT -->
+    <link rel="stylesheet" href="styles/layout.css" />
+
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="styles/components/buttons.css" />
+    <link rel="stylesheet" href="styles/components/card.css" />
+    <link rel="stylesheet" href="styles/components/catalog.css" />
+    <link rel="stylesheet" href="styles/components/categories.css" />
+    <link rel="stylesheet" href="styles/components/advantages.css" />
+    <link rel="stylesheet" href="styles/components/best.css" />
+    <link rel="stylesheet" href="styles/components/how-it-works.css" />
+    <link rel="stylesheet" href="styles/components/faq.css" />
+    <link rel="stylesheet" href="styles/components/filters.css" />
+    <link rel="stylesheet" href="styles/components/form.css" />
+    <link rel="stylesheet" href="styles/components/subscribe.css" />
+    <link rel="stylesheet" href="styles/components/header.css" />
+    <link rel="stylesheet" href="styles/components/hero.css" />
+    <link rel="stylesheet" href="styles/components/menu.css" />
+    <link rel="stylesheet" href="styles/components/reviews.css" />
+    <link rel="stylesheet" href="styles/components/skeleton.css" />
+    <link rel="stylesheet" href="styles/components/slider.css" />
+    <link rel="stylesheet" href="styles/components/footer.css" />
+
+    <!-- UTILITIES + ANIMATIONS -->
+    <link rel="stylesheet" href="styles/utilities/utils.css" />
+    <!-- <link rel="stylesheet" href="styles/animations.css" />-->
+
+    <script type="module" src="js/app.js"></script>
+  </head>
+
+  <!-- data-bg options: aurora | grid | dash-grid | dash-rhythm | bento-grid | aurora-fog | glass-geo | mesh | strata -->
+  <body data-bg="dash-grid">
+    <header class="c-header">
+      <div class="o-container c-header__inner">
+        <a href="index.html" class="c-header__logo">
+          <img
+            class="c-header__logo-img"
+            src="assets/icons/CourseLand_logo.png"
+            alt="CourseLand"
+            width="28"
+            height="28"
+          />
+          <span class="c-header__logo-text">CourseLand</span>
+        </a>
+
+        <!-- DESKTOP NAV -->
+        <nav class="c-nav" aria-label="Основная навигация">
+          <a href="#catalog">Каталог</a>
+          <a href="#faq">FAQ</a>
+          <a href="#subscribe">Подписка</a>
+        </nav>
+
+        <!-- ACTIONS -->
+        <div class="c-header__actions">
+          <button
+            class="c-theme-toggle"
+            aria-label="Переключить тему"
+            data-theme-toggle
+          >
+            <span class="c-theme-toggle__icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                data-icon="moon"
+                aria-hidden="true"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <line x1="12" y1="2" x2="12" y2="5" />
+                <line x1="12" y1="19" x2="12" y2="22" />
+                <line x1="2" y1="12" x2="5" y2="12" />
+                <line x1="19" y1="12" x2="22" y2="12" />
+                <line x1="4.2" y1="4.2" x2="6.3" y2="6.3" />
+                <line x1="17.7" y1="17.7" x2="19.8" y2="19.8" />
+                <line x1="4.2" y1="19.8" x2="6.3" y2="17.7" />
+                <line x1="17.7" y1="6.3" x2="19.8" y2="4.2" />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                data-icon="sun"
+                aria-hidden="true"
+              >
+                <path
+                  d="
+                    M21 12.8
+                    A9 9 0 1 1
+                    11.2 3
+                    A7 7 0 0 0
+                    21 12.8
+                  "
+                />
+              </svg>
+            </span>
+          </button>
+
+          <button
+            class="c-burger"
+            aria-label="Открыть меню"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            data-burger
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="c-mobile-menu" id="mobile-menu" hidden>
+      <div class="c-mobile-menu__overlay" data-menu-overlay></div>
+
+      <nav
+        class="c-mobile-menu__panel"
+        role="navigation"
+        aria-label="Мобильное меню"
+      >
+        <button
+          class="c-mobile-menu__close"
+          aria-label="Закрыть меню"
+          data-menu-close
+        >
+          ✕
+        </button>
+
+        <ul class="c-mobile-menu__list">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#subscribe">Подписка</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <!-- HERO -->
+      <section class="c-hero" data-hero>
+        <div class="o-container c-hero__inner">
+          <div class="c-hero__badges" aria-label="Ключевые преимущества">
+            <p class="c-hero__badge">
+              <span class="c-hero__badge-dot" aria-hidden="true"></span>
+              Платформа онлайн-курсов
+            </p>
+            <p class="c-hero__badge">
+              <span class="c-hero__badge-dot" aria-hidden="true"></span>
+              Коротко, ясно, по делу
+            </p>
+          </div>
+
+          <h1 class="c-hero__title">
+            Учись онлайн<br />
+            <span>Развивай карьеру</span>
+          </h1>
+
+          <p class="c-hero__lead">
+            Практические курсы по дизайну, разработке и маркетингу — учитесь в
+            удобном темпе.
+          </p>
+
+          <div class="c-hero__actions">
+            <a href="#catalog" class="c-button c-button--primary c-hero__cta">
+              Выбрать курс
+            </a>
+            <a
+              href="#catalog"
+              class="c-button c-button--ghost c-hero__secondary"
+            >
+              Как это работает
+            </a>
+          </div>
+
+          <ul class="c-hero__meta" aria-label="Показатели платформы">
+            <li><strong>120+</strong><span>курсов</span></li>
+            <li><strong>45k</strong><span>студентов</span></li>
+            <li><strong>4.8</strong><span>рейтинг</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CATEGORIES -->
+      <section class="c-categories" aria-labelledby="categories-title">
+        <div class="o-container">
+          <h2 id="categories-title" class="c-section-title">
+            Популярные направления
+          </h2>
+
+          <div class="c-categories__rail">
+            <div class="c-categories__list" data-categories>
+              <button class="c-category is-active" data-value="">Все</button>
+              <button class="c-category" data-value="design">Дизайн</button>
+              <button class="c-category" data-value="dev">Разработка</button>
+              <button class="c-category" data-value="marketing">
+                Маркетинг
+              </button>
+              <button class="c-category" data-value="analytics">
+                Аналитика
+              </button>
+              <button class="c-category" data-value="management">
+                Менеджмент
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CATALOG -->
+      <section class="c-catalog" id="catalog">
+        <div class="o-container">
+          <header class="c-catalog__header">
+            <h2 class="c-section-title">Каталог курсов</h2>
+
+            <form class="c-filters" aria-label="Фильтры курсов">
+              <div class="c-filter" data-filter>
+                <button
+                  type="button"
+                  class="c-filter__trigger"
+                  aria-expanded="false"
+                  aria-controls="filter-category"
+                  aria-pressed="false"
+                  data-default="Категория"
+                  data-value=""
+                >
+                  Категория
+                </button>
+
+                <div class="c-filter__panel" id="filter-category" hidden>
+                  <ul class="c-filter__options">
+                    <li><button type="button" data-value="">Все</button></li>
+                    <li>
+                      <button type="button" data-value="design">Дизайн</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="dev">Разработка</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="marketing">
+                        Маркетинг
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="analytics">
+                        Аналитика
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="management">
+                        Менеджмент
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-filter" data-filter>
+                <button
+                  type="button"
+                  class="c-filter__trigger"
+                  aria-expanded="false"
+                  aria-controls="filter-level"
+                  aria-pressed="false"
+                  data-default="Уровень"
+                  data-value=""
+                >
+                  Уровень
+                </button>
+
+                <div class="c-filter__panel" id="filter-level" hidden>
+                  <ul class="c-filter__options">
+                    <li>
+                      <button type="button" data-value="">Любой</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="beginner">
+                        Начальный
+                      </button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="middle">Средний</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="advanced">
+                        Продвинутый
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-filter" data-filter>
+                <button
+                  type="button"
+                  class="c-filter__trigger"
+                  aria-expanded="false"
+                  aria-controls="filter-price"
+                  aria-pressed="false"
+                  data-default="Цена"
+                  data-value=""
+                >
+                  Цена
+                </button>
+
+                <div class="c-filter__panel" id="filter-price" hidden>
+                  <ul class="c-filter__options">
+                    <li>
+                      <button type="button" data-value="">Любой</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="free">Бесплатно</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="paid">Платно</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-filter" data-filter>
+                <button
+                  type="button"
+                  class="c-filter__trigger"
+                  aria-expanded="false"
+                  aria-controls="filter-duration"
+                  aria-pressed="false"
+                  data-default="Длительность"
+                  data-value=""
+                >
+                  Длительность
+                </button>
+
+                <div class="c-filter__panel" id="filter-duration" hidden>
+                  <ul class="c-filter__options">
+                    <li>
+                      <button type="button" data-value="">Любой</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="short">Короткие</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="long">Длинные</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="c-filter" data-filter>
+                <button
+                  type="button"
+                  class="c-filter__trigger"
+                  aria-expanded="false"
+                  aria-controls="filter-rating"
+                  aria-pressed="false"
+                  data-default="Рейтинг"
+                  data-value=""
+                >
+                  Рейтинг
+                </button>
+
+                <div class="c-filter__panel" id="filter-rating" hidden>
+                  <ul class="c-filter__options">
+                    <li>
+                      <button type="button" data-value="">Любой</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="4.5">4.5+</button>
+                    </li>
+                    <li>
+                      <button type="button" data-value="4.8">4.8+</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+            <div class="c-filter-overlay" hidden></div>
+          </header>
+
+          <div class="c-catalog-state">
+            <!-- LOADING -->
+            <div class="c-catalog-loading" data-catalog-loading hidden>
+              <div class="c-catalog-grid">
+                <!-- 6 skeleton-карточек -->
+                <!-- генерируются один раз -->
+              </div>
+            </div>
+
+            <!-- RESULTS -->
+            <div class="c-catalog-grid" data-catalog-grid>
+              <!-- карточки -->
+            </div>
+
+            <!-- EMPTY -->
+            <div class="c-catalog-empty" data-catalog-empty hidden>
+              <div class="c-catalog-empty__inner">
+                <h3 class="c-catalog-empty__title">Ничего не найдено</h3>
+                <p class="c-catalog-empty__text">
+                  Попробуйте изменить фильтры или сбросить их.
+                </p>
+
+                <button
+                  type="button"
+                  class="c-catalog-empty__action"
+                  data-reset-filters
+                >
+                  Сбросить фильтры
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ADVANTAGES -->
+      <section class="c-advantages" aria-labelledby="advantages-title">
+        <div class="o-container">
+          <h2 id="advantages-title" class="c-section-title">
+            Преимущества платформы
+          </h2>
+
+          <div class="c-advantages__grid">
+            <article class="c-advantage-card">
+              <h3>Практика на реальных задачах</h3>
+              <p>
+                Мини‑проекты и задания, которые можно добавить в портфолио уже
+                во время обучения.
+              </p>
+            </article>
+
+            <article class="c-advantage-card">
+              <h3>Гибкий график</h3>
+              <p>
+                Учитесь в своём темпе: доступ к материалам остаётся после
+                завершения курса.
+              </p>
+            </article>
+
+            <article class="c-advantage-card">
+              <h3>Поддержка экспертов</h3>
+              <p>
+                Наставники помогают разобраться в сложных темах и дают
+                развернутую обратную связь.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="c-how" aria-labelledby="how-title">
+        <div class="o-container">
+          <h2 id="how-title" class="c-section-title">Как это работает</h2>
+
+          <ol class="c-how__list">
+            <li class="c-how__item">
+              <span class="c-how__step">01</span>
+              <h3>Выберите курс</h3>
+              <p>Изучите программу и сравните варианты по уровню и тематике.</p>
+            </li>
+            <li class="c-how__item">
+              <span class="c-how__step">02</span>
+              <h3>Начните обучение</h3>
+              <p>Проходите уроки и выполняйте практику, когда вам удобно.</p>
+            </li>
+            <li class="c-how__item">
+              <span class="c-how__step">03</span>
+              <h3>Получите результат</h3>
+              <p>
+                Соберите портфолио и примените навыки на работе или в проектах.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- BEST -->
+      <section class="c-best" data-reveal>
+        <div class="o-container">
+          <h2 class="c-section-title">Лучшие курсы недели</h2>
+
+          <div class="c-slider" data-slider>
+            <button class="c-slider__btn" data-prev aria-label="Назад">
+              ‹
+            </button>
+            <div class="c-slider__track" data-track></div>
+            <button class="c-slider__btn" data-next aria-label="Вперёд">
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- REVIEWS -->
+      <section class="c-home-reviews" aria-labelledby="reviews-title">
+        <div class="o-container">
+          <h2 id="reviews-title" class="c-section-title">Отзывы студентов</h2>
+
+          <div class="c-reviews c-slider" data-reviews-slider>
+            <button class="c-slider__btn" data-prev aria-label="Назад">
+              ‹
+            </button>
+            <div class="c-slider__track" data-track>
+            </div>
+            <button class="c-slider__btn" data-next aria-label="Вперёд">
+              ›
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="c-faq" aria-labelledby="faq-title" data-reveal>
+        <div class="o-container">
+          <h2 id="faq-title" class="c-section-title">Частые вопросы</h2>
+
+          <div class="c-faq__list" data-faq>
+            <!-- items -->
+          </div>
+        </div>
+      </section>
+
+      <!-- SUBSCRIBE -->
+      <section id="subscribe" class="c-subscribe" data-reveal>
+        <div class="o-container">
+          <div class="c-subscribe__inner">
+            <div class="c-subscribe__intro">
+              <h2>Подписка на обновления</h2>
+              <p>
+                Новые курсы, скидки и подборки раз в неделю. Без спама, с
+                пользой.
+              </p>
+              <ul
+                class="c-subscribe__points"
+                aria-label="Преимущества подписки"
+              >
+                <li>Подборки по направлениям</li>
+                <li>Персональные рекомендации</li>
+                <li>Ранний доступ к акциям</li>
+              </ul>
+            </div>
+
+            <form
+              class="c-form c-subscribe__form"
+              data-subscribe-form
+              data-endpoint="/api/subscribe"
+              action="/api/subscribe"
+              method="post"
+              novalidate
+            >
+              <label class="c-subscribe__field">
+                <span>Имя</span>
+                <input
+                  type="text"
+                  name="name"
+                  autocomplete="given-name"
+                  placeholder="Как к вам обращаться"
+                />
+              </label>
+
+              <label class="c-subscribe__field">
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  autocomplete="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </label>
+
+              <label class="c-subscribe__consent">
+                <input type="checkbox" name="consent" required />
+                <span> Согласен на обработку данных и получение писем. </span>
+              </label>
+
+              <label class="u-visually-hidden">
+                <span>Компания</span>
+                <input type="text" name="company" tabindex="-1" />
+              </label>
+
+              <input type="hidden" name="source" value="homepage" />
+
+              <button class="c-button c-button--primary" type="submit">
+                Подписаться
+              </button>
+
+              <p
+                class="c-form__status"
+                role="status"
+                aria-live="polite"
+                data-status
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="c-footer" aria-labelledby="footer-title">
+      <div class="o-container c-footer__inner">
+        <div class="c-footer__brand">
+          <a href="index.html" class="c-footer__logo">
+            <img
+              src="assets/icons/CourseLand_logo.png"
+              alt="CourseLand"
+              width="28"
+              height="28"
+            />
+            <span>CourseLand</span>
+          </a>
+          <p class="c-footer__lead">
+            Курсы, которые помогают расти в дизайне, разработке и маркетинге.
+          </p>
+          <div class="c-footer__meta">
+            <span>Киев · Онлайн</span>
+            <span>support@courseland.ua</span>
+          </div>
+        </div>
+
+        <div class="c-footer__nav">
+          <h2 id="footer-title" class="c-footer__title">Навигация</h2>
+          <ul>
+            <li><a href="#catalog">Каталог курсов</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#subscribe">Подписка</a></li>
+          </ul>
+        </div>
+
+        <div class="c-footer__nav">
+          <h3 class="c-footer__title">Компания</h3>
+          <ul>
+            <li><a href="#">О платформе</a></li>
+            <li><a href="#">Преподаватели</a></li>
+            <li><a href="#">Партнеры</a></li>
+            <li><a href="#">Вакансии</a></li>
+          </ul>
+        </div>
+
+        <div class="c-footer__nav">
+          <h3 class="c-footer__title">Соцсети</h3>
+          <ul class="c-footer__socials">
+            <li>
+              <a href="#" aria-label="CourseLand в Telegram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 3L3 10.5l7 2.5L12.5 20 15 13l6-10Z" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="CourseLand во Facebook">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 3h-3a4 4 0 0 0-4 4v3H6v4h2v7h4v-7h3l1-4h-4V7a1 1 0 0 1 1-1h3Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="CourseLand на Instagram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle
+                    cx="17"
+                    cy="7"
+                    r="1"
+                    fill="currentColor"
+                    stroke="none"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="o-container c-footer__bottom">
+        <span>© <span data-year></span> CourseLand. Все права защищены.</span>
+        <div class="c-footer__legal">
+          <a href="#">Политика конфиденциальности</a>
+          <a href="#">Публичная оферта</a>
+        </div>
+      </div>
+    </footer>
+
+    <script type="application/ld+json" data-schema-catalog></script>
+  </body>
+</html>
